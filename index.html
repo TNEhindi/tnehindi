@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TNEhindi | The Next Episode Hindi</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#080808;color:white}
+.header{text-align:center;padding:20px 15px 18px;background:radial-gradient(circle at top,#3a0508 0%,#130204 45%,#080808 100%)}
+.logo{width:105px;height:105px;border-radius:50%;object-fit:cover;border:3px solid #ff1d2d;box-shadow:0 0 22px rgba(255,0,30,.45)}
+.header h1{margin:10px 0 3px;font-size:31px;letter-spacing:.5px}
+.header .tagline{margin:0;color:#ddd;font-size:15px}
+.welcome{margin-top:9px;font-size:14px;color:#ffb9be}
+.banner-wrap{width:100%;background:#000}
+.banner{display:block;width:100%;height:auto;object-fit:contain}
+.container{width:100%;max-width:900px;margin:auto;padding:25px 14px}
+.section-title{text-align:center;margin:5px 0 8px;font-size:27px}
+.section-subtitle{text-align:center;color:#aaa;font-size:14px;margin:0 0 23px}
+.genre-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.genre{position:relative;min-height:125px;border-radius:17px;overflow:hidden;text-decoration:none;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #333;box-shadow:0 5px 18px rgba(0,0,0,.45);transition:.2s}
+.genre:active{transform:scale(.97)}
+.genre::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top,#4b1118,#181818 65%)}
+.genre-icon,.genre-name{position:relative;z-index:2}
+.genre-icon{font-size:40px;margin-bottom:9px}
+.genre-name{font-size:17px;font-weight:bold}
+.love::before{background:linear-gradient(145deg,#671629,#1c0a10)}
+.romantic::before{background:linear-gradient(145deg,#681950,#1b0917)}
+.horror::before{background:linear-gradient(145deg,#2d3033,#090909)}
+.emotional::before{background:linear-gradient(145deg,#163c59,#08141e)}
+.thriller::before{background:linear-gradient(145deg,#642107,#1a0903)}
+.family::before{background:linear-gradient(145deg,#57400e,#171105)}
+.comedy::before{background:linear-gradient(145deg,#5a4311,#181104)}
+.mystery::before{background:linear-gradient(145deg,#29205b,#0c091d)}
+.about{margin-top:38px;padding:25px 18px;background:#121212;border-radius:18px;border:1px solid #292929;text-align:center}
+.about h2{margin-top:0}
+.about p{color:#ccc;line-height:1.7;font-size:15px;margin-bottom:0}
+.contact{margin-top:22px;padding:25px 18px;background:#121212;border-radius:18px;border:1px solid #292929}
+.contact h2{text-align:center;margin-top:0}
+.contact p{text-align:center;color:#aaa;font-size:14px}
+.contact input,.contact textarea{width:100%;padding:14px;margin-top:11px;border-radius:10px;border:1px solid #3a3a3a;background:#080808;color:white;font-size:15px;outline:none}
+.contact textarea{min-height:120px;resize:vertical}
+.send-btn{width:100%;border:0;margin-top:13px;padding:14px;border-radius:10px;background:#e50914;color:white;font-size:16px;font-weight:bold}
+.social{text-align:center;padding:32px 10px 15px}
+.social h2{margin-bottom:18px}
+.social-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.social-links a{text-decoration:none;color:white;background:#1c1c1c;border:1px solid #333;padding:11px 15px;border-radius:25px;font-size:14px}
+footer{text-align:center;padding:25px 15px;background:#030303;border-top:1px solid #222;color:#888;font-size:13px}
+footer strong{color:#ddd}
+@media(min-width:700px){
+.genre-grid{grid-template-columns:repeat(4,1fr)}
+.genre{min-height:150px}
+.banner-wrap{padding:15px}
+.banner{max-width:1200px;margin:auto;border-radius:15px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<img src="logo.jpg" class="logo" alt="TNEhindi Logo">
+<h1>TNEhindi</h1>
+<p class="tagline">The Next Episode Hindi</p>
+<div class="welcome">Welcome to the Official TNEhindi Website ❤️</div>
+</header>
+
+<div class="banner-wrap">
+<img src="banner.png" class="banner" alt="TNEhindi Official Banner">
+</div>
+
+<main class="container">
+<h2 class="section-title">Explore Videos</h2>
+<p class="section-subtitle">Choose your favourite genre &amp; watch TNEhindi stories 🎬</p>
+
+<div class="genre-grid">
+<a href="love.html" class="genre love"><span class="genre-icon">❤️</span><span class="genre-name">Love</span></a>
+<a href="romantic.html" class="genre romantic"><span class="genre-icon">💞</span><span class="genre-name">Romantic</span></a>
+<a href="horror.html" class="genre horror"><span class="genre-icon">👻</span><span class="genre-name">Horror</span></a>
+<a href="emotional.html" class="genre emotional"><span class="genre-icon">🥺</span><span class="genre-name">Emotional</span></a>
+<a href="thriller.html" class="genre thriller"><span class="genre-icon">🔥</span><span class="genre-name">Thriller</span></a>
+<a href="family.html" class="genre family"><span class="genre-icon">👨‍👩‍👧</span><span class="genre-name">Family Drama</span></a>
+<a href="comedy.html" class="genre comedy"><span class="genre-icon">😂</span><span class="genre-name">Comedy</span></a>
+<a href="mystery.html" class="genre mystery"><span class="genre-icon">🔍</span><span class="genre-name">Mystery</span></a>
+</div>
+
+<section class="about">
+<h2>About TNEhindi</h2>
+<p>Welcome to <strong>TNEhindi – The Next Episode Hindi</strong>. Here you'll find entertaining Hindi stories including Love, Romance, Horror, Emotional Stories, Thrillers, Comedy, Mystery and Family Drama. Choose your favourite genre and enjoy the next episode! ❤️</p>
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+<p>Have a message for TNEhindi? Send it below.</p>
+<form>
+<input type="text" placeholder="Your Name" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="button" class="send-btn">Send Message</button>
+</form>
+</section>
+
+<section class="social">
+<h2>Follow TNEhindi</h2>
+<div class="social-links">
+<a href="#" target="_blank" rel="noopener">▶️ YouTube</a>
+<a href="#" target="_blank" rel="noopener">📸 Instagram</a>
+<a href="#" target="_blank" rel="noopener">🔵 Facebook</a>
+</div>
+</section>
+</main>
+
+<footer>
+<p><strong>TNEhindi</strong> • The Next Episode Hindi</p>
+<p>Copyright © 2026–Present TNEhindi</p>
+<p>All Rights Reserved.</p>
+</footer>
+</body>
+</html>
