@@ -8,19 +8,26 @@ p{text-align:center;color:#aaa}.grid{display:grid;grid-template-columns:repeat(2
 .video img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}.video .title{padding:9px;font-weight:700;font-size:13px;line-height:1.35}
 .placeholder{aspect-ratio:9/16;display:grid;place-items:center;text-align:center;color:#999;padding:8px;border:1px dashed #555;border-radius:13px;background:#0b0b13}
 @media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr)}}</style></head><body><div class="wrap">
-<a class="back" href="index.html">← HOME</a><h1 id="title"></h1><p id="desc">TNEhindi videos</p><div class="grid" id="grid"></div></div>
+<a class="back" href="index.html">← HOME</a><h1 id="title"></h1><p>TNEhindi videos</p><div class="grid" id="grid"></div></div>
 <script>
 const raw=new URLSearchParams(location.search).get("g")||"videos";
 const name=raw.replaceAll("-"," ");
 document.getElementById("title").textContent=name+" Videos";
 document.title=name+" Videos | TNEhindi";
-let html="";
-if(raw==="comedy"){
- html=`<a class="video" href="https://youtube.com/shorts/5R8lGcfFVqQ?si=sNtIbvKtYXj9HMGz" target="_blank" rel="noopener">
- <img src="comedy-video-1.png" alt="Live in Relationship">
- <div class="title">Live In Relationship – एक सच्ची प्रेम कहानी</div></a>`;
+let html="", start=1;
+
+if(raw==="love"){
+ html+=`<a class="video" href="https://youtube.com/shorts/lnlqxtqHT3k?si=xGs8kRD-LqiVlQZT" target="_blank" rel="noopener">
+ <img src="love-video-1.png" alt="Drone Wala Pyar"><div class="title">Drone Wala Pyar</div></a>`;
+ html+=`<a class="video" href="https://youtube.com/shorts/pHvff3ZwofU?si=TJMPRVlTDxqqC72i" target="_blank" rel="noopener">
+ <img src="love-video-2.png" alt="Kashmir Trip"><div class="title">Kashmir Trip</div></a>`;
+ start=3;
 }
-const start=raw==="comedy"?2:1;
+if(raw==="comedy"){
+ html+=`<a class="video" href="https://youtube.com/shorts/5R8lGcfFVqQ?si=sNtIbvKtYXj9HMGz" target="_blank" rel="noopener">
+ <img src="comedy-video-1.png" alt="Live in Relationship"><div class="title">Live In Relationship – एक सच्ची प्रेम कहानी</div></a>`;
+ start=2;
+}
 for(let i=start;i<=10;i++) html+=`<div class="placeholder">Thumbnail ${i}<br>Coming Soon</div>`;
 document.getElementById("grid").innerHTML=html;
 </script></body></html>
