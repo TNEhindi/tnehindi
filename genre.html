@@ -1,3 +1,26 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TNEhindi Videos</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#030309;color:#fff;font-family:Arial,sans-serif}.wrap{max-width:950px;margin:auto;padding:14px 10px}.back{display:inline-block;padding:10px 13px;border:1px solid #ff2a88;border-radius:10px;color:#fff;text-decoration:none;background:#130714}h1{text-align:center;text-transform:uppercase;background:linear-gradient(90deg,#ff2a88,#18c5ff);-webkit-background-clip:text;color:transparent}p{text-align:center;color:#aaa}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.video{aspect-ratio:9/16;border:1px dashed #555;border-radius:13px;background:#0b0b13;display:grid;place-items:center;text-align:center;color:#999;padding:8px}@media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr)}}</style></head><body><div class="wrap"><a class="back" href="index.html">← HOME</a><h1 id="title"></h1><p>Video thumbnails will be added here.</p><div class="grid" id="grid"></div></div>
-<script>const g=(new URLSearchParams(location.search).get("g")||"videos").replaceAll("-"," ");document.getElementById("title").textContent=g+" Videos";document.title=g+" Videos | TNEhindi";document.getElementById("grid").innerHTML=Array.from({length:10},(_,i)=>`<div class="video">Thumbnail ${i+1}<br>Coming Soon</div>`).join("")</script></body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TNEhindi Videos</title><style>
+*{box-sizing:border-box}body{margin:0;background:#030309;color:#fff;font-family:Arial,sans-serif}.wrap{max-width:950px;margin:auto;padding:14px 10px}
+.back{display:inline-block;padding:10px 13px;border:1px solid #ff2a88;border-radius:10px;color:#fff;text-decoration:none;background:#130714}
+h1{text-align:center;text-transform:uppercase;background:linear-gradient(90deg,#ff2a88,#18c5ff);-webkit-background-clip:text;color:transparent}
+p{text-align:center;color:#aaa}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.video{border:1px solid #333;border-radius:13px;background:#0b0b13;overflow:hidden;color:#fff;text-decoration:none}
+.video img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}.video .title{padding:9px;font-weight:700;font-size:13px;line-height:1.35}
+.placeholder{aspect-ratio:9/16;display:grid;place-items:center;text-align:center;color:#999;padding:8px;border:1px dashed #555;border-radius:13px;background:#0b0b13}
+@media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr)}}</style></head><body><div class="wrap">
+<a class="back" href="index.html">← HOME</a><h1 id="title"></h1><p id="desc">TNEhindi videos</p><div class="grid" id="grid"></div></div>
+<script>
+const raw=new URLSearchParams(location.search).get("g")||"videos";
+const name=raw.replaceAll("-"," ");
+document.getElementById("title").textContent=name+" Videos";
+document.title=name+" Videos | TNEhindi";
+let html="";
+if(raw==="comedy"){
+ html=`<a class="video" href="https://youtube.com/shorts/5R8lGcfFVqQ?si=sNtIbvKtYXj9HMGz" target="_blank" rel="noopener">
+ <img src="comedy-video-1.png" alt="Live in Relationship">
+ <div class="title">Live In Relationship – एक सच्ची प्रेम कहानी</div></a>`;
+}
+const start=raw==="comedy"?2:1;
+for(let i=start;i<=10;i++) html+=`<div class="placeholder">Thumbnail ${i}<br>Coming Soon</div>`;
+document.getElementById("grid").innerHTML=html;
+</script></body></html>
