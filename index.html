@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="TNEhindi - The Next Episode Hindi. Love, Romantic, Horror, Emotional, Thriller, Family Drama, Comedy and Mystery stories.">
+<title>TNEhindi | The Next Episode Hindi</title>
+<style>
+:root{--red:#ed1421;--bg:#050505;--panel:#0c0c0c;--line:#292929;--muted:#bdbdbd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.page{width:100%;max-width:1024px;margin:auto;padding:0 10px}
+header{padding:10px 0;background:radial-gradient(circle at top,#250004,#050505 65%)}
+.logo{display:block;width:118px;height:118px;margin:auto;border-radius:50%;object-fit:cover;border:2px solid #f32a34;box-shadow:0 0 22px #d0002066}
+.brand{text-align:center;font-size:28px;font-weight:900;letter-spacing:5px;margin-top:5px}.brand span{color:var(--red)}
+.tag{text-align:center;font-size:11px;letter-spacing:4px;margin:3px 0 10px}
+nav{max-width:830px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:3px;padding:4px;border:1px solid #7b2024;border-radius:25px;background:#170708}
+nav a{text-align:center;padding:9px 2px;border-radius:19px;font-size:12px;font-weight:800;white-space:nowrap}nav a:first-child{background:linear-gradient(135deg,#f31a27,#a9000b)}
+.hero{margin-top:10px}.hero img{display:block;width:100%;height:auto;border:1px solid #8b1219;border-radius:16px}
+.heading{text-align:center;font-size:24px;margin:28px 0 4px;letter-spacing:2px}.heading:before,.heading:after{content:" ✦ ";color:var(--red);font-size:13px}
+.sub{text-align:center;color:#ccc;font-size:13px;margin:0 0 14px}
+.genres{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.genre{position:relative;aspect-ratio:1.13/1;border-radius:14px;overflow:hidden;border:1px solid var(--c);background:#111;box-shadow:0 6px 18px #0009}
+.genre img{width:100%;height:100%;display:block;object-fit:cover}.genre:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#020202f2)}
+.label{position:absolute;z-index:2;left:9px;right:9px;bottom:9px;display:flex;align-items:center;gap:7px;font-size:14px;font-weight:900}
+.ico{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#060606c9;border:1px solid var(--c);font-size:18px}
+.love{--c:#ff334c}.romantic{--c:#ff45c5}.horror{--c:#42d8e8}.emotional{--c:#ffbd00}.thriller{--c:#ff4c24}.family{--c:#8ac640}.comedy{--c:#ffd000}.mystery{--c:#9b73e8}
+.panel{margin-top:14px;padding:18px 14px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#111,#080808)}
+.panel h2{text-align:center;margin:0 0 11px;font-size:21px;letter-spacing:1px}.panel h2:before,.panel h2:after{content:" ✦ ";color:var(--red);font-size:12px}
+.about p{text-align:center;margin:0;color:#ddd;font-size:13px;line-height:1.65}
+.contact{display:grid;gap:9px}input,textarea{width:100%;background:#080808;border:1px solid #3a3a3a;border-radius:9px;padding:12px;color:#fff;font:inherit}textarea{min-height:95px;resize:vertical}
+button{width:100%;border:0;border-radius:9px;padding:13px;background:linear-gradient(135deg,#f21624,#c4000d);color:#fff;font-size:14px;font-weight:900;cursor:pointer}
+.msg{font-size:11px;text-align:center;color:#999;margin:8px 0 0}
+.socials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.social{display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 5px;border-radius:11px;font-size:12px;font-weight:900;border:1px solid #444}
+.yt{background:linear-gradient(135deg,#d90c16,#3d080a)}.ig{background:linear-gradient(135deg,#c10b88,#3d174d)}.fb{background:linear-gradient(135deg,#286cba,#142640)}.tg{background:linear-gradient(135deg,#159bd5,#113f58)}
+footer{text-align:center;color:#aaa;font-size:11px;line-height:1.7;padding:22px 10px 34px;margin-top:18px;border-top:1px solid #202020}footer strong{color:#fff}
+.up{position:fixed;right:13px;bottom:14px;width:41px;height:41px;border-radius:50%;display:grid;place-items:center;background:var(--red);font-size:22px;box-shadow:0 5px 15px #0009}
+@media(min-width:700px){.genres{grid-template-columns:repeat(4,1fr)}.socials{grid-template-columns:repeat(4,1fr)}.contact{grid-template-columns:1fr 1.2fr .8fr;align-items:stretch}.contact button{height:100%}}
+</style>
+</head>
+<body id="home">
+<header><div class="page">
+<img class="logo" src="logo.jpg" alt="TNEhindi logo">
+<div class="brand">TNE <span>TV</span></div>
+<div class="tag">THE NEXT EPISODE HINDI</div>
+<nav><a href="#home">🏠 HOME</a><a href="#videos">▶ VIDEOS</a><a href="#about">ⓘ ABOUT</a><a href="#contact">✉ CONTACT</a></nav>
+</div></header>
+
+<main class="page">
+<section class="hero"><img src="banner.jpg" alt="TNEhindi banner"></section>
+
+<section id="videos">
+<h1 class="heading">EXPLORE VIDEOS</h1><p class="sub">Choose your favourite genre &amp; watch TNEhindi stories 🍿</p>
+<div class="genres">
+<a class="genre love" href="#" data-genre="Love"><img src="genre-love.jpg"><div class="label"><span class="ico">❤️</span>LOVE</div></a>
+<a class="genre romantic" href="#" data-genre="Romantic"><img src="genre-romantic.jpg"><div class="label"><span class="ico">💞</span>ROMANTIC</div></a>
+<a class="genre horror" href="#" data-genre="Horror"><img src="genre-horror.jpg"><div class="label"><span class="ico">👻</span>HORROR</div></a>
+<a class="genre emotional" href="#" data-genre="Emotional"><img src="genre-emotional.jpg"><div class="label"><span class="ico">😢</span>EMOTIONAL</div></a>
+<a class="genre thriller" href="#" data-genre="Thriller"><img src="genre-thriller.jpg"><div class="label"><span class="ico">🔥</span>THRILLER</div></a>
+<a class="genre family" href="#" data-genre="Family Drama"><img src="genre-family.jpg"><div class="label"><span class="ico">👨‍👩‍👧</span>FAMILY DRAMA</div></a>
+<a class="genre comedy" href="#" data-genre="Comedy"><img src="genre-comedy.jpg"><div class="label"><span class="ico">😂</span>COMEDY</div></a>
+<a class="genre mystery" href="#" data-genre="Mystery"><img src="genre-mystery.jpg"><div class="label"><span class="ico">🔎</span>MYSTERY</div></a>
+</div>
+</section>
+
+<section class="panel about" id="about"><h2>ABOUT TNEHINDI</h2>
+<p>Welcome to <strong>TNEhindi – The Next Episode Hindi</strong>. Here you'll find entertaining Hindi stories including Love, Romance, Horror, Emotional Stories, Thrillers, Comedy, Mystery and Family Drama. Choose your favourite genre and enjoy the next episode! ❤️</p></section>
+
+<section class="panel" id="contact"><h2>CONTACT US</h2>
+<form class="contact" id="contactForm"><input id="name" placeholder="👤 Your Name" required><textarea id="message" placeholder="💬 Your Message" required></textarea><button type="submit">➤ SEND MESSAGE</button></form>
+<p class="msg" id="msg">Private website inbox connection will be added separately.</p></section>
+
+<section class="panel"><h2>FOLLOW TNEHINDI</h2><div class="socials">
+<a class="social yt" href="https://www.youtube.com/@TNEhindi">▶️ YOUTUBE</a>
+<a class="social ig" href="https://www.instagram.com/tnehindiofficialll/">📸 INSTAGRAM</a>
+<a class="social fb" href="https://www.facebook.com/TNEhindi">ⓕ FACEBOOK</a>
+<a class="social tg" href="https://t.me/TNEhindi">✈️ TELEGRAM</a>
+</div></section>
+</main>
+
+<footer><strong>TNEhindi</strong> • The Next Episode Hindi<br>Copyright © 2026–Present TNEhindi<br>All Rights Reserved.</footer>
+<a class="up" href="#home">↑</a>
+
+<script>
+document.querySelectorAll('[data-genre]').forEach(el=>el.addEventListener('click',e=>{
+ e.preventDefault(); alert(el.dataset.genre+' videos will be added here.');
+}));
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault(); document.getElementById('msg').textContent='Inbox backend is not connected yet, so this message has not been sent.';
+});
+</script>
+</body></html>
