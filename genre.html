@@ -28,6 +28,19 @@ if(raw==="comedy"){
  <img src="comedy-video-1.png" alt="Live in Relationship"><div class="title">Live In Relationship – एक सच्ची प्रेम कहानी</div></a>`;
  start=2;
 }
+if(raw==="family-drama"){
+ html+=`<a class="video" href="https://youtube.com/shorts/odu1BRFLJpA?si=Xsmz_-M8eZZG7Jtv" target="_blank" rel="noopener">
+ <img src="family-video-1.jpg" alt="Pati Patni Ka Pyar"><div class="title">पति-पत्नी का प्यार ❤️</div></a>`;
+ html+=`<a class="video" href="https://youtube.com/shorts/iiWatXctXF0?si=5z19eZXavrUCtp7m" target="_blank" rel="noopener">
+ <img src="family-video-2.jpg" alt="Saas Bahu Ka Jhagda"><div class="title">सास-बहू का झगड़ा – 5 साल बाद बहू बनी माँ ❤️</div></a>`;
+ html+=`<a class="video" href="https://youtube.com/shorts/dsSOe-zw3xU?si=aNmT50FVUf6WYiIx" target="_blank" rel="noopener">
+ <img src="family-video-3.jpg" alt="Pati Patni Ka Pyar"><div class="title">पति-पत्नी का प्यार ❤️</div></a>`;
+ html+=`<a class="video" href="https://youtube.com/shorts/c6l9re7EY-s?si=1dphKHJNA82OtQPR" target="_blank" rel="noopener">
+ <img src="family-video-4.jpg" alt="Pati Patni Ke Roz Ke Jhagde"><div class="title">पति-पत्नी के रोज़ के झगड़े 💔</div></a>`;
+ html+=`<a class="video" href="https://youtube.com/shorts/10cN-GtqLAA?si=RFVYToadm6tKngDp" target="_blank" rel="noopener">
+ <img src="family-video-5.jpg" alt="Pati Patni Ki Nok Jhok"><div class="title">पति-पत्नी की नोकझोंक ❤️</div></a>`;
+ start=6;
+}
 for(let i=start;i<=10;i++) html+=`<div class="placeholder">Thumbnail ${i}<br>Coming Soon</div>`;
 document.getElementById("grid").innerHTML=html;
 </script></body></html>
