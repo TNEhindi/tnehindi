@@ -110,4 +110,24 @@ const data=[["Love","love"],["Romantic","romantic"],["Horror","horror"],["Emotio
 function toggleSearch(){let b=document.getElementById("searchBox");b.classList.toggle("show");if(b.classList.contains("show")){document.getElementById("searchInput").focus();render("")}}
 function render(q){let r=data.filter(x=>x[0].toLowerCase().includes(q.toLowerCase()));document.getElementById("results").innerHTML=r.map(x=>`<a href="genre.html?g=${x[1]}">🎬 ${x[0]} Videos</a>`).join("")||"<p>No results found</p>"}
 document.getElementById("searchInput").addEventListener("input",e=>render(e.target.value));
-</script></body></html>
+</script>
+<script>
+document.querySelectorAll('.card img').forEach(img=>{
+  img.addEventListener('error',()=>{
+    const card=img.closest('.card');
+    const isMarriage=card && card.classList.contains('marriage');
+    const isFun=card && card.classList.contains('funcomedy');
+    if(isMarriage || isFun){
+      img.style.display='none';
+      card.style.background=isMarriage
+        ? 'radial-gradient(circle at 50% 35%,#ff7db8 0,#6b123f 42%,#12030c 100%)'
+        : 'radial-gradient(circle at 50% 35%,#ffd94d 0,#6b4a00 42%,#120d00 100%)';
+      const icon=document.createElement('div');
+      icon.textContent=isMarriage?'💍':'🤣';
+      icon.style.cssText='position:absolute;inset:0;display:grid;place-items:center;font-size:72px;padding-bottom:25px';
+      card.prepend(icon);
+    }
+  });
+});
+</script>
+</body></html>
